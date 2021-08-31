@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": "./", // This must be specified if "paths" is.
+    "paths": {
+        "@public/*": ["public/*"],
+        "@comp/*": ["components/*"],
+        "@lib/*": ["lib/*"],
+        "@styles/*": ["styles/*"]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "components/Navbar.js", "components/ImageUploader.js", "components/ImageUploader.js", "components/PostContent.tsx", "components/PostContent.tsx", "components/PostContent.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

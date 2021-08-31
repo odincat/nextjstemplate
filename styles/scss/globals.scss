@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
+
+:root {
+  --black: #000000;
+}
+
+@mixin styledLink {
+  a {
+    color: var(--color-link-blue);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 17px;
+}
+
+html { 
+  height: 100%;
+}
+
+body { 
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+main {
+  padding: 1rem 10vw;
+}
+
+.centered { 
+  display: grid;
+  place-items: center;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+
+a {
+  color: #3EB2FF;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
